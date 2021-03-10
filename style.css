@@ -408,7 +408,7 @@ header{
 .sessao-contatos{
     width: 100%;
     height: 100vh;
-    background-color: #f5f5f5;
+    background: linear-gradient(to top, #1CB5E0, #000046);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -505,11 +505,92 @@ header{
     color: #eee;
     border: none;
     border-radius: .5rem;
-    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
+    
     cursor: pointer;
     transition: .5s;
 }
 
 .btn-submit:hover{
+    opacity: 0.8;
+}
+
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orcamento-wrapper{
+    width: 60%;
+    height: 80%;
+    background: #ffffff99;
+    border-radius: 10px;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #000046;
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to left, #1CB5E0, #000046);
+    padding: 0 3rem;
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.sessao-orcamento form{
+    margin: 8rem 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.sessao-orcamento label{
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.sessao-orcamento input[type="number"]{
+    font-family: var(--font-secondary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem;   
+}
+
+.btn-orcamento{
+    text-transform: uppercase;
+    width: 100%;
+    height: 2rem;
+    background: #000046;
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    background: linear-gradient(to left, #1CB5E0, #000046);
+    font-family: var(--font-action);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #eee;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s;
+    grid-column: 2;
+}
+
+.btn-orcamento:hover{
     opacity: 0.8;
 }
